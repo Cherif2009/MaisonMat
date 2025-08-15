@@ -23,6 +23,9 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+#menu object {
+    height: 15vh;
+}
 #menu div {
     display: flex;
     gap: 5vh;
@@ -57,9 +60,6 @@ body {
     height: 6vh;
     opacity: 1;
 }
-#menu object {
-    height: 15vh;
-}
 
 
 
@@ -90,6 +90,9 @@ body {
     display: inline-block;
     cursor: pointer;
     aspect-ratio: 1 / 1;
+    border-radius: 4vh;
+    overflow: hidden;
+    transition: 0.5s;
 }
 #navigation div img {
     display: block;
@@ -106,7 +109,7 @@ body {
 }
 #navigation h4 {
     padding: 1vw 2vw;
-    font-size: 1em;
+    font-size: 1.2em;
     transition: 0.5s;
 }
 #navigation p {
@@ -127,18 +130,21 @@ body {
     flex-direction: column;
     color: white;
 }
-#navigation div:hover img {
-    filter: saturate(10%);
+[id^="select_"]:hover {
+    border-radius: 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
+#navigation div:hover img {
+    filter: saturate(10%);
+    filter: blur(4px);
+}
 #navigation div:hover h4 {
-    font-size: 1.25em;
-    background-color: rgba(0, 123, 255, .75);
+    background-color: rgba(0, 123, 255, 0.5);
 }
 #navigation div:hover p {
-    font-size: 1.1em;
+    font-size: 1em;
     opacity: 1;
-    background-color: rgba(0, 123, 255, .75);
+    background-color: rgba(0, 123, 255, 0.5);
 }
 
 
