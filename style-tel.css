@@ -40,6 +40,7 @@ body {
     /*section accueil*/
     #accueil_1 {
         width: 100vw;
+        overflow: hidden;
     }
     #accueil_1 img {
         width: 150%;
@@ -78,4 +79,5 @@ body {
         height: 200px;
         background-color: rgba(0, 123, 255, 1);
     }
+
 }
