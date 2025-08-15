@@ -1,0 +1,81 @@
+/*style général*/
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+
+@media (orientation: portrait) {
+    /*barre de navigation*/
+    #menu {
+        margin: 4vw 4vw 4vw 4vw;
+        width: calc(100vw - 4vw - 4vw);
+        height: 8vw;
+        border-radius: 4vw;
+        background-color: rgba(0, 123, 255, 0.6);
+    }
+    #menu object {
+        height: 12vw;
+    }
+    #menu div {
+        gap: 4vw;
+        margin-right: 4vw;
+    }
+    #menu div a {
+        font-size: 0.6em;
+    }
+    #menu div a p {
+        background-color: rgba(255, 255, 255, 0);
+        opacity: 1;
+    }
+    #menu div img {
+        height: 6vw;
+        opacity: 1;
+    }
+
+
+
+
+    /*section accueil*/
+    #accueil_1 {
+        width: 100vw;
+    }
+    #accueil_1 img {
+        width: 150%;
+    }
+
+
+
+
+    /*section navigation*/
+    #navigation {
+        padding: 5vw;
+        width: calc(100vw - 10vw);
+        grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+        gap: 4vw;
+    }
+    [id^="select_"] {
+        border-radius: 2vw;
+    }
+    #navigation h4 {
+        padding: 2vw 2vw;
+        font-size: 0.8em;
+    }
+    #navigation p {
+        padding: 0 0 0 3vw;
+    }
+    #navigation div:hover p {
+        font-size: 0.6em;
+    }
+
+
+
+
+    /*section footer*/
+    #footer {
+        width: 100vw;
+        height: 200px;
+        background-color: rgba(0, 123, 255, 1);
+    }
+}
