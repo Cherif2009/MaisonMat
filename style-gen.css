@@ -67,7 +67,8 @@ body {
 /*section accueil*/
 #accueil_1 {
     width: 100vw;
-    height: max-content;
+    height: 100vh;
+    overflow: hidden;
 }
 #accueil_1 img {
     width: 100%;
@@ -85,7 +86,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
     gap: 2vw;
 }
-[id^="select_"] {
+[id^="select_"], [id^="men_"] {
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -131,6 +132,10 @@ body {
     color: white;
 }
 [id^="select_"]:hover {
+    border-radius: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+[id^="men_"]:hover {
     border-radius: 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
